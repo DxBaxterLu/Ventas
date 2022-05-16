@@ -39,7 +39,7 @@
                     <ion-icon name="people" class="mr-3 lead"></ion-icon>Vendedores
                 </a>
                 <a href="#" class="d-block p-3 mb-2 text-light">
-                    <ion-icon name="cart" class="mr-3 lead"></ion-icon> Venta
+                    <ion-icon name="cart" class="mr-3 lead"></ion-icon> Ventas
                 </a>
             </div>
         </div>
