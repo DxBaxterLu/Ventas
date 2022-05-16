@@ -23,7 +23,7 @@
                 </a>
             </div>
             <div class="menu">
-                <a href="#" class="d-block p-3 mb-2 text-light">
+                <a href="<?php echo base_url; ?>Clientes" class="d-block p-3 mb-2 text-light">
                     <ion-icon name="people" class="mr-3 lead"></ion-icon> Clientes
                 </a>
                 <a href="#" class="d-block p-3 mb-2 text-light">
