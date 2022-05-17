@@ -29,7 +29,7 @@
                 <a href="<?php echo base_url; ?>Pais" class="d-block p-3 mb-2 text-light">
                     <ion-icon name="globe" class="mr-3 lead"></ion-icon> Pais
                 </a>
-                <a href="<?php echo base_url; ?>Concesionarios" class="d-block p-3 mb-2 text-light">
+                <a href="<?php echo base_url;; ?>Concesionarios" class="d-block p-3 mb-2 text-light">
                     <ion-icon name="business" class="mr-3 lead"></ion-icon> Concesionarios
                 </a>
                 <a href="<?php echo base_url; ?>Productos" class="d-block p-3 mb-2 text-light">
