@@ -38,7 +38,7 @@ class Query extends Conexion
         $this->sql = $sql;
         $this->arrValues = $arrValues;
 
-        $insert = $this->conexion->prepare($this->sql);
+        $insert = $this->con->prepare($this->sql);
         $resInsert = $insert->execute($this->arrValues);
 
         if ($resInsert) {
