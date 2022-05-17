@@ -8,15 +8,7 @@ class Clientes extends Controller
 
     public function index()
     {
-        //$i = 0;
-        //$data = "";
-
-
         $this->views->getView($this, "index");
-        /*$data[$i]['acciones'] = '<div>
-                <button class="btn btn-primary" type="button" onclick="btnEditarUser(' . $data[$i]['id'] . ');"><i class="fas fa-edit"></i></button>
-                <button class="btn btn-danger" type="button" onclick="btnEliminarUser(' . $data[$i]['id'] . ');"><i class="fas fa-trash-alt"></i></button>
-                <div/>';*/
     }
 
     public function registrar()

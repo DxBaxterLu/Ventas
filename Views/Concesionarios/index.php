@@ -32,10 +32,13 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="frmConcesionarios">
+                    <form id="frmConcesionarios" name="frmConcesionarios">
+                        <input type="hidden" id="id" name="id" value="">
+                        <p class="text-primary"> Todos los campos son obligatorios. </p>
+
                         <div class="form-group mt-2">
                             <label for="sector">Sector</label>
-                            <input type="text" class="form-control mb-2" id="sector" placeholder="Ingrese el Sector">
+                            <input type="text" class="form-control mb-2" id="sector" name="sector" placeholder="Ingrese el Sector">
                         </div>
                         <div class="form-group">
                             <label for="nombre">Nombre</label>

@@ -27,15 +27,18 @@
         </table>
     </div>
 
-    <div class="modal fade" id="clienteModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal fade" id="clienteModal" tabindex="-1" role="dialog" aria-labelledby="titleModal" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitle">Nuevo Cliente</h5>
+                    <h5 class="modal-title" id="titleModal">Nuevo Cliente</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form id="frmClientes">
+                        <input type="hidden" id="id" name="id" value="">
+                        <p class="text-primary"> Todos los campos son obligatorios. </p>
+
                         <div class="form-group mt-2">
                             <label for="nombre">Nombre</label>
                             <input type="text" class="form-control mb-2" id="nombre" placeholder="Ingrese el Nombre">
@@ -63,7 +66,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">Guardar</button>
+                    <button type="submit" id="btnAction" class="btn btn-primary"><span id="btnText">Guardar</span></button>
                 </div>
             </div>
         </div>

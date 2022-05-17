@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bienvenido</title>
+    <title>Bienvenidos</title>
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -18,8 +18,8 @@
     <div class="d-flex">
         <div id="sidebar-container" class="bg-dark text-white">
             <div class="logo">
-                <a href="<?php echo base_url;?>">
-                    <h4 class="text-light font-weight-bold"> Proyecto</h4>
+                <a href="<?php echo base_url; ?>">
+                    <h4 class="text-light font-weight-bold"> Proyecto Ventas </h4>
                 </a>
             </div>
             <div class="menu">
