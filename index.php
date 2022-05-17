@@ -27,8 +27,10 @@ if (!empty($array[2])) {
 }
 
 require_once 'Config/App/autoload.php';
+$controller = ucwords($controller);
 
 $dirControllers = "Controllers/" . $controller . ".php";
+//echo $dirControllers;
 
 if (file_exists($dirControllers)) {
     require_once $dirControllers;
