@@ -8,15 +8,15 @@ class Clientes extends Controller
 
     public function index()
     {
-        $i = 0;
-        $data = "";
+        //$i = 0;
+        //$data = "";
 
-        
+
         $this->views->getView($this, "index");
-        $data[$i]['acciones'] = '<div>
+        /*$data[$i]['acciones'] = '<div>
                 <button class="btn btn-primary" type="button" onclick="btnEditarUser(' . $data[$i]['id'] . ');"><i class="fas fa-edit"></i></button>
                 <button class="btn btn-danger" type="button" onclick="btnEliminarUser(' . $data[$i]['id'] . ');"><i class="fas fa-trash-alt"></i></button>
-                <div/>';
+                <div/>';*/
     }
 
     public function registrar()
@@ -30,25 +30,25 @@ class Clientes extends Controller
         $hash = hash("SHA256", $clave);
         if (empty($usuario) || empty($nombre) || empty($caja)) {
             $msg = array('msg' => 'Todo los campos son obligatorios', 'icono' => 'warning');
-        }else{
+        } else {
             if ($id == "") {
-                if($clave != $confirmar){
+                if ($clave != $confirmar) {
                     $msg = array('msg' => 'Las contraseña no coinciden', 'icono' => 'warning');
-                }else{
+                } else {
                     $data = $this->model->registrarUsuario($usuario, $nombre, $hash, $caja);
                     if ($data == "ok") {
                         $msg = array('msg' => 'Usuario registrado con éxito', 'icono' => 'success');
-                    }else if($data == "existe"){
+                    } else if ($data == "existe") {
                         $msg = array('msg' => 'El usuario ya existe', 'icono' => 'warning');
-                    }else{
+                    } else {
                         $msg = array('msg' => 'Error al registrar el usuario', 'icono' => 'error');
                     }
                 }
-            }else{
+            } else {
                 $data = $this->model->modificarUsuario($usuario, $nombre, $caja, $id);
                 if ($data == "modificado") {
                     $msg = array('msg' => 'Usuario modificado con éxito', 'icono' => 'success');
-                }else {
+                } else {
                     $msg = array('msg' => 'Error al modificar el usuario', 'icono' => 'error');
                 }
             }
@@ -69,7 +69,7 @@ class Clientes extends Controller
         $data = $this->model->accionUser(0, $id);
         if ($data == 1) {
             $msg = array('msg' => 'Usuario dado de baja', 'icono' => 'success');
-        }else{
+        } else {
             $msg = array('msg' => 'Error al eliminar el usuario', 'icono' => 'error');
         }
         echo json_encode($msg, JSON_UNESCAPED_UNICODE);
