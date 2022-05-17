@@ -1,5 +1,5 @@
 <?php
-const base_url = "http://localhost/pryDavid/";
+const base_url = "http://localhost/Ventas/";
 
 const host = "localhost";
 const user = "root";

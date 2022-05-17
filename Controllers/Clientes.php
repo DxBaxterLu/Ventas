@@ -1,12 +1,17 @@
 <?php
 class Clientes extends Controller
 {
-    public function index()
+    public function __construct()
     {
-        print_r($this->model->getClientes());
+        parent::__construct();
     }
 
-    public function validar()
+    public function index()
+    {
+        $this->views->getView($this, "index");
+    }
+
+    /*public function validar()
     {
         if (empty($_POST['nombre'] || $_POST['apellido'] || $_POST['cedula'] || $_POST['telefono'] || $_POST['correo'] || $_POST['direccion'])) {
             $msg = "Los campos estan vacios";
@@ -22,5 +27,5 @@ class Clientes extends Controller
 
         print_r($data);
         die();
-    }
+    }*/
 }

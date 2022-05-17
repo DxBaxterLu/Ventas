@@ -1,6 +1,6 @@
 function frmClientes(e) {
   e.preventDefault();
-  const nombre = document.getElementById("nombre");
+  /*const nombre = document.getElementById("nombre");
   const apellido = document.getElementById("apellido");
   const cedula = document.getElementById("cedula");
   const telefono = document.getElementById("telefono");
@@ -61,5 +61,5 @@ function frmClientes(e) {
         console.log(this.responseText);
       }
     };
-  }
+  }*/
 }
