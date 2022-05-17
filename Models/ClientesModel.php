@@ -6,9 +6,17 @@ class ClientesModel extends Query
         parent::__construct();
     }
 
-    public function getClientes(/*string $nombre, string $apellido, int $cedula, int $telefono, string $correo, string $direccion*/)
+    public function setClientes(string $nombre, string $apellido, int $cedula, int $telefono, string $correo, string $direccion)
     {
-        $sql = "SELECT * FROM clientes /*WHERE nombre = 'nombre' AND apellido = 'apellido' AND cedula = 'cedula' AND telefono = 'telefono' AND correo = 'correo' AND direccion = 'direccion'*/";
+        $query_insert = "INSERT INTO clientes(nombre, apellido, cedula, telefono, correo, direccion) VALUES (?,?,?,?,?,?)";
+        $arrData = array($nombre, $apellido, $cedula, $telefono, $correo, $direccion);
+        $request_insert = $this->insert($query_insert, $arrData);
+        return $request_insert;
+    }
+
+    public function getClientes()
+    {
+        $sql = "SELECT * FROM clientes";
         $data = $this->select($sql);
         return $data;
     }
