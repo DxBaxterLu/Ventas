@@ -10,7 +10,7 @@
                 Nuevo Concesionario
             </h6>
         </button>
-        <table class="table table-light table-bordered table-hover" id="tblConcesionario">
+        <table class="table table-dark table-bordered table-hover" id="tblConcesionario">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">Sector</th>

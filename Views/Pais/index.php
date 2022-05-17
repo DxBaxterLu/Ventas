@@ -10,7 +10,7 @@
                 Nuevo País
             </h6>
         </button>
-        <table class="table table-light table-bordered table-hover" id="tblPais">
+        <table class="table table-dark table-bordered table-hover" id="tblPais">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">Nombre</th>
