@@ -26,19 +26,19 @@
                 <a href="<?php echo base_url; ?>Clientes" class="d-block p-3 mb-2 text-light">
                     <ion-icon name="people" class="mr-3 lead"></ion-icon> Clientes
                 </a>
-                <a href="#" class="d-block p-3 mb-2 text-light">
+                <a href="<?php echo base_url; ?>Pais" class="d-block p-3 mb-2 text-light">
                     <ion-icon name="globe" class="mr-3 lead"></ion-icon> Pais
                 </a>
-                <a href="#" class="d-block p-3 mb-2 text-light">
+                <a href="<?php echo base_url; ?>Concesionarios" class="d-block p-3 mb-2 text-light">
                     <ion-icon name="business" class="mr-3 lead"></ion-icon> Concesionarios
                 </a>
-                <a href="#" class="d-block p-3 mb-2 text-light">
+                <a href="<?php echo base_url; ?>Productos" class="d-block p-3 mb-2 text-light">
                     <ion-icon name="car" class="mr-3 lead"></ion-icon> Productos
                 </a>
-                <a href="#" class="d-block p-3 mb-2 text-light">
+                <a href="<?php echo base_url; ?>Vendedores" class="d-block p-3 mb-2 text-light">
                     <ion-icon name="people" class="mr-3 lead"></ion-icon>Vendedores
                 </a>
-                <a href="#" class="d-block p-3 mb-2 text-light">
+                <a href="<?php echo base_url; ?>Venta" class="d-block p-3 mb-2 text-light">
                     <ion-icon name="cart" class="mr-3 lead"></ion-icon> Venta
                 </a>
             </div>
