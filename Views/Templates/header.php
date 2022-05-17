@@ -11,34 +11,34 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
-    <link rel="stylesheet" href="<?php echo base_url; ?>Assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>Assets/css/style.css">
 </head>
 
 <body>
     <div class="d-flex">
         <div id="sidebar-container" class="bg-dark text-white">
             <div class="logo">
-                <a href="<?php echo base_url; ?>">
+                <a href="<?php echo base_url(); ?>">
                     <h4 class="text-light font-weight-bold"> Proyecto Ventas </h4>
                 </a>
             </div>
             <div class="menu">
-                <a href="<?php echo base_url; ?>Clientes" class="d-block p-3 mb-2 text-light">
+                <a href="<?php echo base_url(); ?>Clientes" class="d-block p-3 mb-2 text-light">
                     <ion-icon name="people" class="mr-3 lead"></ion-icon> Clientes
                 </a>
-                <a href="<?php echo base_url; ?>Pais" class="d-block p-3 mb-2 text-light">
+                <a href="<?php echo base_url(); ?>Pais" class="d-block p-3 mb-2 text-light">
                     <ion-icon name="globe" class="mr-3 lead"></ion-icon> Pais
                 </a>
-                <a href="<?php echo base_url; ?>Concesionarios" class="d-block p-3 mb-2 text-light">
+                <a href="<?php echo base_url(); ?>Concesionarios" class="d-block p-3 mb-2 text-light">
                     <ion-icon name="business" class="mr-3 lead"></ion-icon> Concesionarios
                 </a>
-                <a href="<?php echo base_url; ?>Productos" class="d-block p-3 mb-2 text-light">
+                <a href="<?php echo base_url(); ?>Productos" class="d-block p-3 mb-2 text-light">
                     <ion-icon name="car" class="mr-3 lead"></ion-icon> Productos
                 </a>
-                <a href="<?php echo base_url; ?>Vendedores" class="d-block p-3 mb-2 text-light">
+                <a href="<?php echo base_url(); ?>Vendedores" class="d-block p-3 mb-2 text-light">
                     <ion-icon name="people" class="mr-3 lead"></ion-icon>Vendedores
                 </a>
-                <a href="<?php echo base_url; ?>Venta" class="d-block p-3 mb-2 text-light">
+                <a href="<?php echo base_url(); ?>Venta" class="d-block p-3 mb-2 text-light">
                     <ion-icon name="cart" class="mr-3 lead"></ion-icon> Venta
                 </a>
             </div>

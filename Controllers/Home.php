@@ -8,7 +8,8 @@ class Home extends Controller
 
     public function index()
     {
-        $data['tag_page'] = "Home";
+        $data['page_id'] = 1;
+        $data['page_tag'] = "Home";
         $data['page_title'] = "Proyecto Ventas";
         $data['page_name'] = "home";
         $this->views->getView($this, "index", $data);

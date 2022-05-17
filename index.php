@@ -1,6 +1,7 @@
 <?php
 
 require_once 'Config/Config.php';
+require_once 'Config/Helper.php';
 
 $ruta = !empty($_GET['url']) ? $_GET['url'] : "Home/index";
 $array = explode("/", $ruta);
