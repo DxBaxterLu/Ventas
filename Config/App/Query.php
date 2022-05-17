@@ -16,7 +16,7 @@ class Query extends Conexion
         $result = $this->con->prepare($this->sql);
         $result->execute();
 
-        $data = $result->fetchAll(PDO::FETCH_ASSOC);
+        $data = $result->fetch(PDO::FETCH_ASSOC);
 
         return $data;
     }
@@ -62,7 +62,7 @@ class Query extends Conexion
     {
         $this->sql = $sql;
         $result = $this->con->prepare($this->sql);
-        $result->execute();
-        return $result;
+        $del = $result->execute();
+        return $del;
     }
 }
