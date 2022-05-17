@@ -14,10 +14,32 @@ class ClientesModel extends Query
         return $request_insert;
     }
 
+    public function getCliente($id)
+    {
+        $sql = "SELECT * FROM clientes WHERE id = $id";
+        $request = $this->select($sql);
+        return $request;
+    }
+
+    public function updateClientes(int $id, string $nombre, string $apellido, int $cedula, int $telefono, string $correo, string $direccion)
+    {
+        $sql = "UPDATE clientes SET nombre = ?, apellido = ?, cedula = ?, telefono = ?, correo = ?, direccion = ? WHERE id = $id";
+        $arrData = array($nombre, $apellido, $cedula, $telefono, $correo, $direccion);
+        $request = $this->update($sql, $arrData);
+        return $request;
+    }
+
     public function getClientes()
     {
         $sql = "SELECT * FROM clientes";
-        $data = $this->select($sql);
-        return $data;
+        $request = $this->selectAll($sql);
+        return $request;
+    }
+
+    public function deleteCliente($id)
+    {
+        $sql = "DELETE FROM clientes WHERE id = $id";
+        $request = $this->delete($sql);
+        return $request;
     }
 }
