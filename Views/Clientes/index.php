@@ -5,7 +5,7 @@
         <h4>Clientes</h4>
     </div>
     <div class="card-body">
-        <button class="btn btn-primary mb-2" type="button" data-bs-toggle="modal" data-bs-target="#mymodal">
+        <button class="btn btn-primary mb-2" type="button" data-bs-toggle="modal" data-bs-target="#clienteModal">
             <h6 class="align-self-center mb-0">
                 Nuevo Cliente
             </h6>
@@ -13,14 +13,13 @@
         <table class="table table-light table-bordered table-hover" id="tblClientes">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col">Id</th>
                     <th scope="col">Nombre</th>
                     <th scope="col">Apellido</th>
                     <th scope="col">Cedula</th>
                     <th scope="col">Teléfono</th>
                     <th scope="col">Correo</th>
                     <th scope="col">Dirección</th>
-                    <th scope="col">Estado</th>
+                    <th scope="col">Opciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -28,7 +27,7 @@
         </table>
     </div>
 
-    <div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal fade" id="clienteModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">

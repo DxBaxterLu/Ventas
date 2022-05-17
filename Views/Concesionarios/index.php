@@ -1,11 +1,38 @@
 <?php include "Views/Templates/header.php"; ?>
 
-<div id="container">
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 my-3">
-                    <form id="frmClientes">
+<div class="card">
+    <div class="card-header card-header-primary">
+        <h4>Concesionario</h4>
+    </div>
+    <div class="card-body">
+        <button class="btn btn-primary mb-2" type="button" data-bs-toggle="modal" data-bs-target="#concesionarioModal">
+            <h6 class="align-self-center mb-0">
+                Nuevo Concesionario
+            </h6>
+        </button>
+        <table class="table table-light table-bordered table-hover" id="tblConcesionario">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Sector</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Teléfono</th>
+                    <th scope="col">Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal fade" id="concesionarioModal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Nuevo Concesionario</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="frmConcesionarios">
                         <div class="form-group mt-2">
                             <label for="sector">Sector</label>
                             <input type="text" class="form-control mb-2" id="sector" placeholder="Ingrese el Sector">
@@ -18,24 +45,14 @@
                             <label for="telefono">Telefono</label>
                             <input type="tel" class="form-control mb-2" id="telefono" placeholder="Ingrese el Telefono">
                         </div>
-                        <button type="submit" class="btn btn-primary" onclick="frmConcesionarios(event);">Submit</button>
                     </form>
                 </div>
-                <div class="col-lg-8 mt-4">
-                    <table class="table table-striped" id="tblClientes">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th scope="col">Sector</th>
-                                <th scope="col">Nombre</th>
-                                <th scope="col">Teléfono</th>
-                                <th scope="col">Estado</th>
-                            </tr>
-                        </thead>
-                    </table>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Guardar</button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </div>
 
 <?php include "Views/Templates/footer.php"; ?>
