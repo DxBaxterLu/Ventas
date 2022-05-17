@@ -128,6 +128,7 @@ https://www.youtube.com/watch?v=eV1sKzULD0Y&list=PL3b9xmg86NTIy18iJLav8oGyA3c__l
 
 
 https://www.youtube.com/watch?v=h2viA0Bn3A4&list=PLMPZIgg1n4JkTA3lUi0wShFMqHXGV_fXG&index=11
+https://angelsifuentes.com/2021/03/27/sistema-de-venta-en-php-y-mysql-mvc/
 
 
 			
