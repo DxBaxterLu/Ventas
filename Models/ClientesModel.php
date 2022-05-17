@@ -6,7 +6,7 @@ class ClientesModel extends Query
         parent::__construct();
     }
 
-    public function setClientes(string $nombre, string $apellido, int $cedula, int $telefono, string $correo, string $direccion)
+    public function setCliente(string $nombre, string $apellido, int $cedula, int $telefono, string $correo, string $direccion)
     {
         $query_insert = "INSERT INTO clientes(nombre, apellido, cedula, telefono, correo, direccion) VALUES (?,?,?,?,?,?)";
         $arrData = array($nombre, $apellido, $cedula, $telefono, $correo, $direccion);
@@ -21,7 +21,7 @@ class ClientesModel extends Query
         return $request;
     }
 
-    public function updateClientes(int $id, string $nombre, string $apellido, int $cedula, int $telefono, string $correo, string $direccion)
+    public function updateCliente(int $id, string $nombre, string $apellido, int $cedula, int $telefono, string $correo, string $direccion)
     {
         $sql = "UPDATE clientes SET nombre = ?, apellido = ?, cedula = ?, telefono = ?, correo = ?, direccion = ? WHERE id = $id";
         $arrData = array($nombre, $apellido, $cedula, $telefono, $correo, $direccion);
