@@ -31,7 +31,7 @@ getModal('modalClientes', $data);
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <th><?php echo $dato->$id; ?></th>
+
                                 </tbody>
                             </table>
                         </div>
