@@ -131,4 +131,38 @@ https://www.youtube.com/watch?v=h2viA0Bn3A4&list=PLMPZIgg1n4JkTA3lUi0wShFMqHXGV_
 https://angelsifuentes.com/2021/03/27/sistema-de-venta-en-php-y-mysql-mvc/
 
 
+<div id="container">
+    <section>
+        <div class="container">
+            <form id="frmClientes">
+                <div class="form-group">
+                    <label for="marca">Marca</label>
+                    <input type="text" class="form-control mb-2" id="marca" placeholder="Ingrese la Marca del vehiculo">
+                </div>
+                <div class="form-group">
+                    <label for="modelo">Modelo</label>
+                    <input type="text" class="form-control mb-2" id="modelo" placeholder="Ingrese el modelo del vehiculo">
+                </div>
+                <div class="form-group">
+                    <label for="serie">Serie</label>
+                    <input type="text" class="form-control mb-2" id="serie" placeholder="Ingrese la serie del vehiculo">
+                </div>
+                <div class="form-group">
+                    <label for="color">Color</label>
+                    <input type="text" class="form-control mb-2" id="color" placeholder="Amarillo con Frajas negras">
+                </div>
+                <div class="form-group">
+                    <label for="stock">Stock</label>
+                    <input type="number" class="form-control mb-2" id="stock" placeholder="100">
+                </div>
+                <div class="form-group">
+                    <label for="listPaisId">Pais</label>
+                    <select name="listPaisId" id="listPaisId" class="form-control" required></select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+</div>
+
 			

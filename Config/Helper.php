@@ -12,7 +12,8 @@ function dep($data)
     return $format;
 }
 
-/*function strClean($strCadena)
+function getModal(string $nameModal, $data)
 {
-
-}*/
+    $view_modal = "Views/Templates/Modals/{$nameModal}.php";
+    require_once $view_modal;
+}

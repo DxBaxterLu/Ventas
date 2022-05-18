@@ -9,9 +9,12 @@
     <title>Bienvenidos</title>
 
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.datatables.net/1.12.0/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>Assets/css/style.css">
+
 </head>
 
 <body>
@@ -24,22 +27,19 @@
             </div>
             <div class="menu">
                 <a href="<?php echo base_url(); ?>Clientes" class="d-block p-3 mb-2 text-light">
-                    <ion-icon name="people" class="mr-3 lead"></ion-icon> Clientes
+                    <ion-icon name="people" class="mr-2 lead"></ion-icon> Clientes
                 </a>
                 <a href="<?php echo base_url(); ?>Pais" class="d-block p-3 mb-2 text-light">
-                    <ion-icon name="globe" class="mr-3 lead"></ion-icon> Pais
+                    <ion-icon name="globe" class="mr-2 lead"></ion-icon> Pais
                 </a>
                 <a href="<?php echo base_url(); ?>Concesionarios" class="d-block p-3 mb-2 text-light">
-                    <ion-icon name="business" class="mr-3 lead"></ion-icon> Concesionarios
+                    <ion-icon name="business" class="mr-2 lead"></ion-icon>Categorias
                 </a>
                 <a href="<?php echo base_url(); ?>Productos" class="d-block p-3 mb-2 text-light">
-                    <ion-icon name="car" class="mr-3 lead"></ion-icon> Productos
-                </a>
-                <a href="<?php echo base_url(); ?>Vendedores" class="d-block p-3 mb-2 text-light">
-                    <ion-icon name="people" class="mr-3 lead"></ion-icon>Vendedores
+                    <ion-icon name="car" class="mr-2 lead"></ion-icon>Productos
                 </a>
                 <a href="<?php echo base_url(); ?>Venta" class="d-block p-3 mb-2 text-light">
-                    <ion-icon name="cart" class="mr-3 lead"></ion-icon> Venta
+                    <ion-icon name="cart" class="mr-2 lead"></ion-icon>Pedidos
                 </a>
             </div>
         </div>

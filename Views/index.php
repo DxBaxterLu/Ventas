@@ -20,7 +20,7 @@
                         <div class="col-lg-3 d-flex stat my-3">
                             <div class="mx-auto">
                                 <h6 class="text-muted">
-                                    Ventas Mensuales
+                                    Pedidos Mensuales
                                 </h6>
                                 <h3 class="text-weight-bold">
                                     $50.000
@@ -33,7 +33,7 @@
                         <div class="col-lg-3 d-flex stat my-3">
                             <div class="mx-auto">
                                 <h6 class="text-muted">
-                                    Ventas Mensuales
+                                    Pedidos Mensuales
                                 </h6>
                                 <h3 class="text-weight-bold">
                                     $50.000
@@ -46,7 +46,7 @@
                         <div class="col-lg-3 d-flex stat my-3">
                             <div class="mx-auto">
                                 <h6 class="text-muted">
-                                    Ventas Mensuales
+                                    PEdidos Mensuales
                                 </h6>
                                 <h3 class="text-weight-bold">
                                     $50.000
@@ -59,7 +59,7 @@
                         <div class="col-lg-3 d-flex stat my-3">
                             <div class="mx-auto">
                                 <h6 class="text-muted">
-                                    Ventas Mensuales
+                                    PEdidos Mensuales
                                 </h6>
                                 <h3 class="text-weight-bold">
                                     $50.000
@@ -81,7 +81,7 @@
                 <div class="col-lg-8 my-3">
                     <div class="card rounded-0">
                         <div class="card-header bg-dark">
-                            <h6 class="font-weight-bold text-light"> Número de Ventas </h6>
+                            <h6 class="font-weight-bold text-light"> Número de Pedidos </h6>
                         </div>
                     </div>
                     <div class="card-body">
@@ -93,30 +93,30 @@
                 <div class="col-lg-4 my-3">
                     <div class="card rounded-0">
                         <div class="card-header bg-dark">
-                            <h6 class="font-weight-bold text-light"> Mas Vendidos </h6>
+                            <h6 class="font-weight-bold text-light"> Mas Pedidos </h6>
                         </div>
                         <div class="card-body pt-2">
                             <div class="d-flex border-bottom py-2 mb-3 ">
                                 <div class="d-flex mr-3">
                                     <h3 class="align-self-center mb-0">
-                                        <ion-icon name="pricetags"></ion-icon> &nbsp
+                                        <ion-icon name="pricetags"></ion-icon>
                                     </h3>
                                 </div>
                                 <div class="align-self-center">
-                                    <h6 class="d-inline-block mb-0"> $250 </h6><span class="font-weight-bold ml-2"> BMW </span>
-                                    <small class="d-block text-muted"> Concecionario: Autocons</small>
+                                    <h6 class="d-inline-block mb-0"> $250</h6><span class="font-weight-bold ml-2"> Balon de Futboll </span>
+                                    <small class="d-block text-muted"> Categoria: Juguete</small>
                                 </div>
                             </div>
 
                             <div class="d-flex border-bottom py-2 mb-3 ">
                                 <div class="d-flex mr-3">
                                     <h3 class="align-self-center mb-0">
-                                        <ion-icon name="pricetags"></ion-icon> &nbsp
+                                        <ion-icon name="pricetags"></ion-icon>
                                     </h3>
                                 </div>
                                 <div class="align-self-center">
-                                    <h6 class="d-inline-block mb-0"> $250 </h6><span class="font-weight-bold ml-2"> BMW </span>
-                                    <small class="d-block text-muted"> Concecionario: Autocons</small>
+                                    <h6 class="d-inline-block mb-0"> $50</h6><span class="font-weight-bold ml-2"> Audifonos </span>
+                                    <small class="d-block text-muted"> Categoria: Tecnologia</small>
                                 </div>
                             </div>
                             <button class="btn btn-dark w-100">Ver Mas</button>
@@ -131,12 +131,12 @@
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>Assets/js/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+<script src="<?php echo base_url(); ?>Assets/js/popper.min.js"></script>
+<script src="<?php echo base_url(); ?>Assets/js/bootstrap.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js" integrity="sha256-ErZ09KkZnzjpqcane4SCyyHsKAXMvID9/xwbl/Aq1pc=" crossorigin="anonymous"></script>
+<script src="<?php echo base_url(); ?>Assets/js/chart.min.js"></script>
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -154,7 +154,7 @@
             maxBarThickness: 30,
 
             datasets: [{
-                label: 'Mayores Ventas',
+                label: 'Mayores Pedidos',
                 backgroundColor: 'rgb(255, 99, 132)',
                 borderColor: 'rgb(255, 99, 132)',
                 data: [0, 10, 5, 2],

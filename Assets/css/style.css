@@ -11,7 +11,10 @@ body {
   color: var(--primary);
 }
 
-a {
+a:hover,
+a:link,
+a:visited,
+a:active {
   text-decoration: none;
 }
 
@@ -41,7 +44,7 @@ a {
 }
 
 #sidebar-container .menu {
-  width: 13rem;
+  width: 10rem;
 }
 
 .btn-search {
@@ -50,7 +53,6 @@ a {
 
 .navbar-nav {
   position: relative;
-  left: 875px;
 }
 
 #content {
