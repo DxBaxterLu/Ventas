@@ -1,4 +1,4 @@
-/*var tblClientes;
+var tblClientes;
 
 document.addEventListener("DOMContentLoaded", function () {
   tblClientes = $("#tblClientes").DataTable({
@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
       url: "//cdn.datatables.net/plug-ins/1.10.20/i18n/Spanish.json",
     },
     ajax: {
-      type: "GET",
-      url: base_url + "/Clientes/getClientes",
-      dataSrc: "",
+      //type: "GET",
+      url: " " + base_url + "/Clientes/getClientes",
+      //dataSrc: "",
     },
     columns: [
       { data: "id" },
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-$("#tblClientes").DataTable();*/
+$("#tblClientes").DataTable();
 
 function openModal() {
   /*document.querySelector("#id").value = "";
