@@ -165,4 +165,7 @@ https://angelsifuentes.com/2021/03/27/sistema-de-venta-en-php-y-mysql-mvc/
     </section>
 </div>
 
+https://www.baulphp.com/crud-php-usando-ajax
+https://github.com/pratikborsadiya/vali-admin/blob/master/docs/table-data-table.html
+
 			
