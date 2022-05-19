@@ -1,34 +1,31 @@
-var tblClientes;
+var tableClientes;
 
 document.addEventListener("DOMContentLoaded", function () {
-  tblClientes = $("#tblClientes").DataTable({
-    aProcessing: true,
-    aServerSide: true,
-    language: {
-      url: "//cdn.datatables.net/plug-ins/1.10.20/i18n/Spanish.json",
+  tableClientes = $("#tableClientes").DataTable({
+    success: function (data) {
+      let datos = $.parseJSON(data);
+      console.log(datos);
+
+      var t = $("#tableClientes").DataTable();
+
+      $.each(datos, function (index, value) {
+        t.rows
+          .add([
+            value.id,
+            value.nombre,
+            value.apellido,
+            value.cedula,
+            value.telefono,
+            value.correo,
+            value.direccion,
+          ])
+          .draw(false);
+      });
     },
-    ajax: {
-      //type: "GET",
-      url: " " + base_url + "/Clientes/getClientes",
-      //dataSrc: "",
-    },
-    columns: [
-      { data: "id" },
-      { data: "nombre" },
-      { data: "apellido" },
-      { data: "cedula" },
-      { data: "telefono" },
-      { data: "correo" },
-      { data: "direccion" },
-    ],
-    responsive: "true",
-    bDestroy: true,
-    idisplayLenght: 10,
-    order: [[0, "desc"]],
   });
 });
 
-$("#tblClientes").DataTable();
+//$("#tableClientes").DataTable();
 
 function openModal() {
   /*document.querySelector("#id").value = "";
