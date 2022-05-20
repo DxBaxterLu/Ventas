@@ -219,5 +219,5 @@ tableClientes = $("#tableClientes").DataTable({
   });
 			
 
-            https://filisantillan.com/blog/vscode-atajos/
-            https://www.danielprimo.io/blog/diez-atajos-de-teclado-para-visual-studio-code#:~:text=Windows%3A%20%5BCTRL%5D%20%2B%20K,CTRL%5D%20%2B%20U%20para%20descomentar.
+https://filisantillan.com/blog/vscode-atajos/
+https://www.danielprimo.io/blog/diez-atajos-de-teclado-para-visual-studio-code#:~:text=Windows%3A%20%5BCTRL%5D%20%2B%20K,CTRL%5D%20%2B%20U%20para%20descomentar.
