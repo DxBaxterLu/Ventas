@@ -15,17 +15,22 @@ getModal('modalClientes', $data);
 
         <div class="row">
             <div class="col-md-12">
+                <div>
+                    <button id="btnCargar" class="btn btn-dark mb-2">
+                        Cargar Clientes
+                    </button>
+                </div>
                 <div class="table-responsive">
-                    <table class="table table-hover table-bordered" id="tableClientes">
+                    <table class="table table-hover table-bordered" id="tblClientes">
                         <thead>
                             <tr>
-                                <th>id</th>
-                                <th>nombre</th>
-                                <th>apellido</th>
-                                <th>cedula</th>
-                                <th>telefono</th>
-                                <th>correo</th>
-                                <th>direccion</th>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Cedula</th>
+                                <th>Telefono</th>
+                                <th>Correo</th>
+                                <th>Direccion</th>
                             </tr>
                         </thead>
                         <tbody>
